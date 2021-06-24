@@ -45,27 +45,70 @@
     .fonctionnement-btn-menu{
         display: flex;
         flex-wrap: wrap;
+
     }
-    .fonctionnement-btn-nbr p{
-        border: 3px solid red;
-        border-radius: 50%;
+    .fonctionnement-btn-nbr {
+        border: 3px solid #9356DC;
+        border-radius: 100%;
+        background-color:#9356DC ;
+        color: white;
+  
+    }
+    .fonctionnement-btn-text{
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+   
+        background-color: #f2f2f2;
+    }
+    .fonctionnement-btn-text i:hover{
+        color: #9356DC;
     }
     .restaurant-titre{
         font-weight: bold;
     }
     .restaurants{
-        background-color: grey;
+        background-color: #f2f2f2;
         height: 1300px;
     }
     .restaurant-description{
         height: 10%;
         width: 100%;
-        border-radius: 20px;
-        border: 1px solid black;
+
     }
     .card-img{
         height: 150px;
-        width: 200px;
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-top: 20px;
+    }
+    .card-description{
+        background-color: white;
+        width: 350px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+  
+    }
+    .card-button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: #9356DC;
+    }
+    .card-button:hover{
+        color: #FF79DA;
+    }
+    .restaurant-description a{
+        text-decoration: none;
+        color: black;
+    }
+    .card-badge{
+        position: absolute;
+        z-index: 1;
+        background-color: rgb(11, 238, 170);
+        color: forestgreen;
     }
 }
 
