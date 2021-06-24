@@ -1,0 +1,75 @@
+@media all and (min-width: 375px) and (max-width: 812px){
+    h1{
+        font-family: 'Shrikhand';
+    }
+    body{
+        font-family: 'Roboto';
+    }
+    h1 img{
+        width: 200px;
+        margin-left: 80px;
+    }
+    .localisation{
+        background-color: #eaeaea;
+        font-size: 1.5em;
+        height: 60px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .exploration{
+        text-align: center;
+    }
+    .titre-exploration{
+        font-weight: bold;
+    }
+    .texte-exploration{
+        font-size: 1.1em;
+    }
+    .button-exploration{
+        background-color: #9356DC;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        border-radius: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .button-exploration:hover{
+        background-color: #FF79DA;
+    }
+    .fonctionnement-titre{
+        font-weight: bold;
+    }
+    .fonctionnement-btn-menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fonctionnement-btn-nbr p{
+        border: 3px solid red;
+        border-radius: 50%;
+    }
+    .restaurant-titre{
+        font-weight: bold;
+    }
+    .restaurants{
+        background-color: grey;
+        height: 1300px;
+    }
+    .restaurant-description{
+        height: 10%;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+    .card-img{
+        height: 150px;
+        width: 200px;
+    }
+}
+
+
+
+
+
