@@ -4,10 +4,22 @@
     }
     body{
         font-family: 'Roboto';
+        margin: 0;
+        padding: 0;
     }
-    h1 img{
+    header a{
+        text-decoration: none;
+        color: black;
+
+    }
+    header i{
+        padding-bottom: 10px;
+    }
+    img{
         width: 200px;
+        height: 50px;
         margin-left: 80px;
+        padding-top: 10px;
     }
     .localisation{
         background-color: #eaeaea;
@@ -39,32 +51,46 @@
     .button-exploration:hover{
         background-color: #FF79DA;
     }
-    .fonctionnement-titre{
-        font-weight: bold;
+    /*Fonctionnement*/
+	.fonctionnement{
+        padding: 15px 16px 30px 16px;
+        }
+        
+        #fonctBloc{
+        display:flex;
+        flex-direction:column;
+        margin-left: 30px;}
+        
+        .fonctBoxs{
+        padding:5px 20px 5px 20px;
+        margin:10px 25px 10px 9px;
+        background-color:#f8f6f4;
+        border-radius: 20px;
+        box-shadow:2px 2px 7px #e0e0e0;
+        position:relative;}
+        
+        .fonctBoxs a{
+        text-decoration: none;}
+        
+        .numbers{
+        position:absolute;
+        left:-5px;
+        text-decoration: none;
+        color:white;
+        background-color:#9356DC;
+        border-radius:100%;
+        padding: 2px 7px 2px 7px;
+        font-size:0.9em;}
+        
+        .fonctLogo i{
+        color:grey;
+        padding-top:5px;
+        margin:0px 20px 0px 20px;}
+        
+    .fonctBoxs p{
+        color:black;
     }
-    .fonctionnement-btn-menu{
-        display: flex;
-        flex-wrap: wrap;
 
-    }
-    .fonctionnement-btn-nbr {
-        border: 3px solid #9356DC;
-        border-radius: 100%;
-        background-color:#9356DC ;
-        color: white;
-  
-    }
-    .fonctionnement-btn-text{
-        border-radius: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-bottom: 20px;
-   
-        background-color: #f2f2f2;
-    }
-    .fonctionnement-btn-text i:hover{
-        color: #9356DC;
-    }
     .restaurant-titre{
         font-weight: bold;
     }
@@ -77,40 +103,152 @@
         width: 100%;
 
     }
-    .card-img{
-        height: 150px;
-        width: 350px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding-top: 20px;
-    }
-    .card-description{
-        background-color: white;
-        width: 350px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-  
-    }
-    .card-button{
+
+    /*Section restaurantsPresentation*/
+	.restaurants{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        color: #9356DC;
+        justify-content: space-around;
+        padding-bottom: 150px;
     }
-    .card-button:hover{
-        color: #FF79DA;
-    }
-    .restaurant-description a{
+        
+        .restaurantsPresentation{
+        padding: 10px 16px 40px 16px;
+        width: auto; height:100%;
+        background-color:#f8f6f4;}
+        
+        .restaurants figure{
+        height: 20rem;
+        margin: 15px 0px 15px 0px;
+        border-radius: 20px;
+        background-color: white;
+        position: relative;
+        box-shadow:2px 2px 8px 3px #e0e0e0;}
+        
+        .restaurants a {
         text-decoration: none;
-        color: black;
-    }
-    .card-badge{
+        color: black;}
+        
+        .restaurants img {
+        width: 100%;
+        height: 75%;
+        object-fit:cover;
+        border-top-left-radius:20px;
+        border-top-right-radius: 20px;}
+        
+        .newLabel {
         position: absolute;
-        z-index: 1;
-        background-color: rgb(11, 238, 170);
-        color: forestgreen;
+        top: 15px;
+        right: 15px;
+        background-color: #99E2D0;
+        color:teal;
+        font-weight: bold;
+        padding: 5px 10px 5px 10px;}
+        
+        /*ANIMATION COEUR*/
+        .like i {
+        font-size: 1.7em;
+        position:absolute;
+        top:82%;
+        right:8%;
+        }
+        
+        i.fas.fa-heart {
+        display: none;
+        background: linear-gradient(to bottom, #9356dc, #ff79da);
+        -webkit-background-clip: text;
+        color: transparent;
+        }
+        
+        .like:hover i.fa-heart {
+        display: none;}
+        
+        .like:hover i.fas.fa-heart {
+        display: block;}
+        
+        i.fa-heart:hover {
+        cursor: pointer;
+        }
+        
+        .cardDescription{
+        margin: 2rem 0rem 2rem 1rem;
+        line-height:0.2em;}
+
+    footer{
+        background-color: rgba(73, 72, 72, 0.986);
+        color: white;
+        padding-top: 10px;
+        height: 235px;
     }
+    .footer-container{
+        padding-left: 20px;
+    }
+    .footer-container a{
+        text-decoration: none;
+        color: white;
+    }
+    .footer-container p{
+        font-size: 1.3em;
+    }
+    /* RESTAURANT*/
+    .picture-restaurant{
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 240px;
+        position: absolute; z-index: 0;
+    }
+    #restaurant{
+        background-color: #f8f6f4;
+        border-top-left-radius:50px ;
+        border-top-right-radius:50px ;
+        position: relative; z-index: 1;
+        margin-top: 200px;
+        padding-bottom:100px ;
+    }
+    .nom-restaurant{
+        margin-left: 10px;
+    }
+    #entrees{
+        margin-left: 10px;
+    }
+    #plat{
+        margin-left: 10px;
+    }
+    #dessert{
+        margin-left: 10px;
+    }
+    .button-commander{
+        margin-left: 80px;
+        margin-top: 50px;
+        background-color: #9356DC;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        border-radius: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .button-commander:hover{
+        background-color: #FF79DA;
+    }
+    .trait_vert{
+        border-bottom: 4px solid rgb(61, 228, 172);
+        margin-right: 320px;
+    }
+    .menu {
+        display:flex;
+        flex-direction:row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+   
+  
 }
+
 
 
 
